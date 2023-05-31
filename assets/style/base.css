@@ -1,0 +1,165 @@
+
+body {
+    background-color: #fbfbfb;
+}
+
+.container {
+    width: min(100% - 30px, 1380px);
+    margin-inline: auto;
+}
+
+/* -------------------------------*/
+/*Header                          */
+/* -------------------------------*/
+
+
+header {
+    min-width: 100%;
+    height: 56px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.title {
+    width: 40%;
+    height: 56%;
+}
+
+.title h1 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 56px;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+}
+
+nav {
+    width: 60%;
+    text-align: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li{
+    display: inline;
+    line-height: 56px;
+    cursor: default;
+}
+nav ul li a, .mobile-menu {
+    font-size: 18px;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+nav ul li + li {
+    margin-left: 18px;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.btn-menu {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    line-height: 40px;
+    width: 140px;
+    border-radius: 50px;
+    border: 1px solid #3865FF;
+    background-color: #3865FF;
+    color: #fff;
+    cursor: pointer;
+}
+.btn-menu:hover {
+    background-color: #0035e9;
+    transition: background-color 0.25s ease-in-out;
+    text-decoration: none;
+
+}
+
+
+
+
+/* -------------------------------*/
+/*  Media queries                 */
+/* -------------------------------*/
+
+/*  mobile menu                   */
+
+@media (max-width: 670px) {
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .title h1 {
+        font-size: 14px;
+    }
+
+}
+
+
+
+/* 
+  768px and down
+*/
+
+@media (max-width: 768px) {
+    .title h1 {
+        font-size: 16px;
+        font-weight: 600
+    }
+
+nav ul li a  {
+    font-size: 16px;
+    font-weight: 600
+}
+.footer1 p {
+    font-size: 14px;
+}
+.footer2 ul li a {
+    font-size: 14px;
+}
+
+}
+    
+
+/* 
+  480px and down
+*/
+
+@media (max-width: 480px) {
+    .title h1 {
+        font-size: 14px;
+        font-weight: 600
+    }
+
+nav ul li a  {
+    font-size: 14px;
+    font-weight: 600
+}
+.footer1 p {
+    font-size: 12px;
+}
+.footer2 ul li a {
+    font-size: 12px;
+}
+
+}

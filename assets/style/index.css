@@ -4,39 +4,102 @@
 /*Banner                          */
 /* -------------------------------*/
 
-section {
-    margin-top: 30px;
+
+
+body {
+    background-color: var(--app-dark-bg);
 }
 
-.movie-input  {
+h1 {
+    color: green;
+}
+
+.inputSection {
+    margin-top: 55px;
+}
+
+.flex {
+    display: flex; 
+}
+
+.movie-div {
+    display: flex;
     width: 60%;
-    padding: 14px;
-    border: 1px solid #a9a9a9 ;
     border-radius: 10px;
-    font-weight: 600;
-    color: #000;
-    text-align: left;
-    background: #fff ;
-    background-size: 15px;
-    transition: border-color 0.25s ease-in-out;
+    background-color: var(--app-white);
+    border-radius: 10px;
 }
-input + input {
-    margin-left: 7px;
-}
-.city-input + .search {
-    margin-left: 7px;
-}
-.city-input {
+.city-div {
+    display: flex;
     width: 23%;
-    padding: 14px;
-    border: 1px solid #a9a9a9 ;
     border-radius: 10px;
+    background-color: var(--app-white);;
+    border-radius: 10px;
+}
+.search-icon {
+    background-color: var(--app-white);
+    width: 5%;
+    border-radius: 10px 0 0 10px;
+    display: grid;
+    align-items: center;
+    height: 100%;
+}
+.movie-div + .city-div {
+    margin-left: 10px;
+}
+i {
+    color: #fff;
+    text-align: center;
+    width: 10px;
+    font-size: 15px;
+    padding: 0px 11px;
+}
+
+.location {
+    background-color: var(--app-white);
+    width: 15%;
+    border-radius: 10px 0 0 10px;
+    display: grid;
+    align-items: center;
+    height: 100%;
+}
+
+.movie-input {
+    width: 100%;
+    padding: 3px;
     font-weight: 600;
-    color: #000;
+    border-radius: 0 10px 10px 0;
+    color: #fff;
     text-align: left;
-    background: #fff ;
+    background: var(--app-white);;
     background-size: 15px;
     transition: border-color 0.25s ease-in-out;
+}
+
+.movie-div:hover {
+    border: 1px solid green;
+}
+
+input+input {
+    margin-left: 7px;
+}
+
+.city-div + .search {
+    margin-left: 10px;
+}
+
+.city-input {
+    width: 100%;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 0 10px 10px 0;
+    text-align: left;
+    background: var(--app-white);;
+    background-size: 15px;
+    transition: border-color 0.25s ease-in-out;
+}
+.city-div:hover {
+    border: 1px solid green;
 }
 
 
@@ -52,8 +115,86 @@ input + input {
     background-color: green;
     color: #fff;
     cursor: pointer;
-  }
+}
 
-  h2 {
+.search:hover {
+    background-color: darkgreen;
+}
+
+h2 {
+    margin-top: 40px;
+    color: #fff;
+}
+
+.movieBox {
+    margin-top: 40px;
+    color: lightgray;
+    font-size: 14px;
+    width: 200px;
+    height: 300px;
+}
+
+.movieImg {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.movieSection {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.movieTitle {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.parent {
+    display: flex;
+}
+.movie-list-box  {
+    position: absolute;
+    background-color: #000;
+    border-radius: 10px;
+    width: 400px;
+}
+.movie-list-box div {
+    position: relative;
+    line-height: 39px;
     color: #000;
-  }
+    border-radius: 10px;
+    padding: 0px 11px;
+    display: block;
+    color: #fff;
+    font-size: bold;
+}
+.movie-list-box div:hover {
+    background-color: green;
+}
+.city-list-box {
+    position: absolute;
+    margin-left: 837px;
+    background-color: #000;
+    border-radius: 10px;
+    margin-top: 1px;
+    width: 320px;
+}
+.city-list-box div {
+    line-height: 39px;
+    color: #000;
+    border-radius: 10px;
+    padding: 0px 11px;
+    display: block;
+    font-size: bold;
+    color: #fff;
+}
+
+.city-list-box div:hover {
+    background-color: green;
+}
+
+.not-found:hover {
+    background-color: #252525;
+}

@@ -18,7 +18,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./assets/style/index.css" media="all">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Indercheema/cdn/reset.css">
-    <script src="assets/script/index.js" defer></script>
+    <script src="./assets/script/index.js" type="module"></script>
 </head>
 
 <body>
@@ -39,20 +39,40 @@
                 </nav>
             </div>
         </header>
-        <section>
-            <div class="container">
-                <input type="text" class="movie-input" placeholder="Enter Movie Title">
-                <input type="text" class="city-input" placeholder="Enter City Name">
+        <section class="inputSection">
+            <div class="container flex">
+                <div class="movie-div">
+                    <div class="search-icon">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <input type="text" class="movie-input" placeholder="Enter Movie Title">
+                </div>
+                <div class="city-div">
+                    <div class="location">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                    </div>
+                    <input type="text" class="city-input" placeholder="Enter City Name">
+                </div>
                 <button class="search">Search</button>
+                
+            </div>
+            <div class="container parent">
+                <div class="movie-list-box container">
+
+                </div>
+                <div class="city-list-box container">
+
+                </div>
             </div>
         </section>
         <div class="container">
             <h2>Now Playing</h2>
         </div>
-        <section>
-            <div class="container">
+        <section class="container movieSection">
 
-            </div>
+        </section>
+        <section>
+
         </section>
     </main>
 </body>

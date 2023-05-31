@@ -1,3 +1,13 @@
+:root {
+    --app-dark-bg: #1a1d28;
+    --app-red: #ff3c57;
+    --app-green: #33ab4e;
+    --app-purple: #833cff;
+    --app-orange: #ff833c;
+    --app-blue: #3c57ff;
+    --app-blue-hover: #364ee6;
+    --app-white: rgb(255 255 255 / 0.05);
+   }
 
 body {
     background-color: #fbfbfb;
@@ -16,7 +26,7 @@ body {
 header {
     min-width: 100%;
     height: 56px;
-    background-color: #fff;
+    background-color: var(--app-white);
     overflow: hidden;
 }
 
@@ -33,7 +43,7 @@ header {
     font-size: 18px;
     font-weight: 600;
     line-height: 56px;
-    color: #000;
+    color: #fff;
     text-transform: uppercase;
     letter-spacing: 0.2px;
     cursor: pointer;
@@ -55,7 +65,7 @@ nav ul li{
 }
 nav ul li a, .mobile-menu {
     font-size: 18px;
-    color: #000;
+    color: #fff;
     font-weight: 600;
     text-decoration: none;
     letter-spacing: 0.2px;

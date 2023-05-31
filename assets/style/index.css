@@ -77,7 +77,7 @@ i {
 }
 
 .movie-div:hover {
-    border: 1px solid green;
+    border: 1px solid var(--app-green);
 }
 
 input+input {
@@ -99,7 +99,7 @@ input+input {
     transition: border-color 0.25s ease-in-out;
 }
 .city-div:hover {
-    border: 1px solid green;
+    border: 1px solid var(--app-green);
 }
 
 
@@ -112,13 +112,13 @@ input+input {
     width: 15%;
     border-radius: 10px;
     border: 1px solid --app-green;
-    background-color: green;
+    background-color: var(--app-green);
     color: #fff;
     cursor: pointer;
 }
 
 .search:hover {
-    background-color: darkgreen;
+    background-color: var(--app-green-hover);
 }
 
 h2 {
@@ -128,7 +128,6 @@ h2 {
 
 .movieBox {
     margin-top: 40px;
-    color: lightgray;
     font-size: 14px;
     width: 200px;
     height: 300px;
@@ -146,6 +145,7 @@ h2 {
 }
 
 .movieTitle {
+    color: #d3d3d3;
     font-weight: bold;
     margin-top: 10px;
     font-size: 15px;
@@ -156,14 +156,14 @@ h2 {
 }
 .movie-list-box  {
     position: absolute;
-    background-color: #000;
+    background-color: #262933;
     border-radius: 10px;
     width: 400px;
 }
 .movie-list-box div {
     position: relative;
     line-height: 39px;
-    color: #000;
+    color: #262933;
     border-radius: 10px;
     padding: 0px 11px;
     display: block;
@@ -171,19 +171,19 @@ h2 {
     font-size: bold;
 }
 .movie-list-box div:hover {
-    background-color: green;
+    background-color: var(--app-green);
 }
 .city-list-box {
     position: absolute;
     margin-left: 837px;
-    background-color: #000;
+    background-color: #262933;
     border-radius: 10px;
     margin-top: 1px;
     width: 320px;
 }
 .city-list-box div {
     line-height: 39px;
-    color: #000;
+    color: #262933;
     border-radius: 10px;
     padding: 0px 11px;
     display: block;
@@ -192,9 +192,7 @@ h2 {
 }
 
 .city-list-box div:hover {
-    background-color: green;
+    background-color: var(--app-green);
 }
 
-.not-found:hover {
-    background-color: #252525;
-}
+

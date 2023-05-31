@@ -64,7 +64,9 @@ async function filterMovies() {
         const matchedMovies = [];
         for (let i = 0; i < data.results.length; i++) {
             let movieTitle = data.results[i].title;
-            matchedMovies.push(movieTitle);
+            let movieYear = data.results[i].year;
+            let movie = movieTitle + " " + `(${movieYear})`;
+            matchedMovies.push(movie);
         }
         const filterMovies = matchedMovies.filter(movie => {
             return movie.toLowerCase().includes(userInput);
@@ -83,7 +85,7 @@ async function filterMovies() {
         } else {
             const movieNotFound = document.createElement('div');
             movieNotFound.textContent = 'Movie not found with this name';
-            movieNotFound.style.backgroundColor = '#252525';
+            movieNotFound.style.backgroundColor = '#262933';
             movieList.appendChild(movieNotFound);
         }
     }
@@ -131,7 +133,7 @@ async function filterCities() {
         } else {
             const cityNotFound = document.createElement('div');
             cityNotFound.textContent = 'City not found with this name';
-            cityNotFound.style.backgroundColor = '#252525';
+            cityNotFound.style.backgroundColor = '#262933';
             cityList.appendChild(cityNotFound);
         }
     }
